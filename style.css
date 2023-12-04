@@ -1,0 +1,122 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#the-container {
+    height: auto;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;  
+}
+.illustrations {
+    order: initial;
+}
+.info-input {
+    margin: 0px 0px 0px 30px;
+    order: initial;
+}
+ul {
+    margin: 0%;
+    margin-left: -15px;
+}
+li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.unordered-list {
+    display: flex;
+}
+.icon-list {
+    display: flex;
+    flex-direction: column; 
+    margin-right: 0px;
+}
+.icon {
+    margin: 0px 10px 33px;
+}
+p {
+   margin-top: 0px;
+}
+.email-labo {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.email {
+    max-width: 20rem;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    opacity: 0.5;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+span {
+    color: tomato;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.sub-button {
+    max-width: 20rem;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #242742;
+    margin-bottom: 10px;
+}
+button:hover {
+    background: rgb(255,0,185);
+    background: linear-gradient(90deg, rgba(255,0,185,1) 0%, rgba(251,2,2,0.9305847338935574) 100%);
+    box-shadow: 0px 20px 39px -20px rgba(0,0,0,0.6);
+    opacity: 0.8;
+}
+@media (min-width: 600px) {
+    body {
+        background-color: #36384e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #the-container {
+        width: 700px;
+        height: auto;
+        background-color: white;
+        border-radius: 35px;
+        padding: 10px;
+        margin: 50px;
+        display: flex;
+        flex-direction: row;
+}
+    .mob-v { 
+        display: none;
+        z-index: 0;
+    }
+    .desk-v {
+        width: auto;
+        height: 450px;
+    }
+    .info-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: px;
+        order: 1;
+    }
+    .illustrations {
+        order: 2;
+        margin: 5px;
+    }
+}
